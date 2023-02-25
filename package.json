@@ -1,0 +1,25 @@
+{
+  "name": "01-cse341",
+  "version": "1.0.0",
+  "description": "Node app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alirio-Mieres/CSE341-node.git"
+  },
+  "author": "Alirio Mieres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alirio-Mieres/CSE341-node/issues"
+  },
+  "homepage": "https://github.com/Alirio-Mieres/CSE341-node#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
