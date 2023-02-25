@@ -1,10 +1,10 @@
 const { Router } = require('express');
 const router = Router();
 
+const homePage = require('../controllers/lesson01');
+
 router.use('/contacts', require('./contacts'));
 
-router.use('/', (req, res) => {
-    res.send('Alirio Mieres');
-});
+router.get('/', homePage.find);
 
 module.exports = router;
