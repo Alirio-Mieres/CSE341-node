@@ -1,8 +1,10 @@
-const { Router } = require("express");
-const { getInfo } = require("../controllers/index");
-
+const { Router } = require('express');
 const router = Router();
 
-router.get("/", getInfo);
+router.use('/contacts', require('./contacts'));
+
+router.use('/', (req, res) => {
+    res.send('Alirio Mieres');
+});
 
 module.exports = router;
