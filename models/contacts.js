@@ -2,16 +2,16 @@ const { Schema, model } = require('mongoose');
 
 const ContactSchema = Schema({
   firstName: {
-    type: String,
+    type: String
   },
   lastName: {
-    type: String,
+    type: String
   },
   email: {
-    type: String,
+    type: String
   },
   favoriteColor: {
-    type: String,
+    type: String
   },
   birthday: {
     type: String

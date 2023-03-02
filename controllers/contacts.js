@@ -12,6 +12,20 @@ const createContact = async (req, res = response) => {
   res.json({
     user
   });
+
+  /* #swagger.parameters['Contact'] = {
+      in: 'body',
+      description: 'Contact Information',
+      required: true,
+      schema: { 
+        $firstName:"Andres", 
+        $lastName:"Moffi", 
+        $email:"andres@test.com", 
+        $favoriteColor:"Brown", 
+        $birthday:"06/19/2000"
+      }
+    } 
+  */
 };
 
 const findAll = async (_, res = response) => {
@@ -82,6 +96,20 @@ const updateContact = async (req = request, res = response) => {
       msg: error
     });
   }
+
+  /* #swagger.parameters['Contact'] = {
+      in: 'body',
+      description: 'Contact Information',
+      required: false,
+      schema: { 
+        $firstName:"Andres", 
+        $lastName:"Moffi", 
+        $email:"andres@test.com", 
+        $favoriteColor:"Brown", 
+        $birthday:"06/19/2000"
+      }
+    } 
+  */
 };
 
 module.exports = {

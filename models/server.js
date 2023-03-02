@@ -34,7 +34,7 @@ class Server {
   listen() {
     this.app.listen(this.port, () => {
       console.log(`App listening on port ${this.port}!`);
-      console.log(`See the documentation at http://localhost:${this.port}/api-docs/ 🚀`)
+      console.log(`See the documentation at http://localhost:${this.port}/api-docs/ 🚀`);
     });
   }
 }
