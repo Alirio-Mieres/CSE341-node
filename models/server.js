@@ -23,7 +23,7 @@ class Server {
   }
 
   middlewares() {
-    this.app.use(cors());
+    this.app.use(cors({ origin: 'https://cse341-contacts-frontend.netlify.app/' }));
     this.app.use(express.json());
   }
 
@@ -34,6 +34,7 @@ class Server {
   listen() {
     this.app.listen(this.port, () => {
       console.log(`App listening on port ${this.port}!`);
+      console.log(`See the documentation at http://localhost:${this.port}/api-docs/ 🚀`)
     });
   }
 }
