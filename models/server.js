@@ -27,7 +27,8 @@ class Server {
       cors({
         origin: 'https://cse341-contacts-frontend.netlify.app/',
         optionsSuccessStatus: 200,
-        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+        allowedHeaders: 'Content-Type, Authorization, X-Requested-With',
       })
     );
     this.app.use(express.json());
