@@ -9,9 +9,7 @@ const createContact = async (req, res = response) => {
   const user = new Contact(body);
   await user.save();
 
-  res.json({
-    user
-  });
+  res.status(201).json(user);
 
   /* #swagger.parameters['Contact'] = {
       in: 'body',
@@ -34,9 +32,7 @@ const findAll = async (_, res = response) => {
 
   try {
     const users = await Contact.find();
-    res.status(201).json({
-      users
-    });
+    res.status(200).json(users);
   } catch (error) {
     console.log(error);
     res.status(500).json({
@@ -51,9 +47,7 @@ const findOne = async (req = request, res = response) => {
 
   try {
     const user = await Contact.findById(req.params.id);
-    res.json({
-      user
-    });
+    res.json(user);
   } catch (error) {
     console.log(error);
     res.status(500).json({
@@ -68,9 +62,7 @@ const deleteContact = async (req = request, res = response) => {
 
   try {
     const user = await Contact.findByIdAndDelete(req.params.id);
-    res.status(200).json({
-      user
-    });
+    res.status(200).json(user);
   } catch (error) {
     console.log(error);
     res.status(500).json({
