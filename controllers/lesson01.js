@@ -1,9 +1,9 @@
-const { response, request } = require("express");
+const { response } = require('express');
 
-const find = async (req = request, res = response) => {
+const find = async (_, res = response) => {
   res.send('Alirio Mieres');
 };
 
 module.exports = {
-  find,
+  find
 };
