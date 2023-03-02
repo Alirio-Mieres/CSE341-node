@@ -6,7 +6,7 @@ const doc = {
     description: 'Contacts API - Alirio Mieres - BYU Idaho - CSE 341'
   },
   host: 'cse341-lesson-04.onrender.com',
-  schemes: ['http']
+  schemes: ['https']
 };
 
 const outputFile = './swagger.json';
