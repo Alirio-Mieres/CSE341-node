@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API',
     description: 'Contacts API - Alirio Mieres - BYU Idaho - CSE 341'
   },
-  host: 'localhost:8080',
+  host: 'cse341-lesson-04.onrender.com',
   schemes: ['http']
 };
 
