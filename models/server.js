@@ -25,7 +25,7 @@ class Server {
   middlewares() {
     this.app.use(
       cors({
-        origin: 'https://cse341-contacts-frontend.netlify.app/',
+        origin: 'https://cse341-contacts-frontend.netlify.app',
         optionsSuccessStatus: 200,
         methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         allowedHeaders: 'Content-Type, Authorization, X-Requested-With',
