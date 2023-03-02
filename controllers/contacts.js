@@ -79,9 +79,7 @@ const updateContact = async (req = request, res = response) => {
     const { id } = req.params;
     const data = req.body;
     const user = await Contact.findByIdAndUpdate(id, data);
-    res.status(204).json({
-      user
-    });
+    res.status(204).json(user);
   } catch (error) {
     console.log(error);
     res.status(500).json({
