@@ -7,4 +7,6 @@ router.use('/contacts', require('./contacts'));
 
 router.get('/', homePage.find);
 
+router.use('/', require('./swagger'));
+
 module.exports = router;
