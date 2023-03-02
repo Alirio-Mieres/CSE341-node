@@ -23,7 +23,13 @@ class Server {
   }
 
   middlewares() {
-    this.app.use(cors({ origin: 'https://cse341-contacts-frontend.netlify.app/' }));
+    this.app.use(
+      cors({
+        origin: 'https://cse341-contacts-frontend.netlify.app/',
+        optionsSuccessStatus: 200,
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE'
+      })
+    );
     this.app.use(express.json());
   }
 
