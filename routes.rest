@@ -1,27 +1,56 @@
-1. LOCALHOST
+// LOCALHOST 
 
-###
-GET http://localhost:8080/contacts 
+### Get all contacts GET http://localhost:8080/contacts
 
-###
-GET http://localhost:8080/contacts/63fa5ca8ba460857117b68a9
+### Get contact by id GET http://localhost:8080/contacts/6401fffd495c612130283b90
 
-###
-GET http://localhost:8080/contacts/63fa5d3c3f96be0d654f788a
+### Create contact POST http://localhost:8080/contacts
 
-###
-GET http://localhost:8080/contacts/63fa5e714175f78489626b8c
+{
+    "firstName":"Tony", 
+    "lastName":"Hanks", 
+    "email":"hanks@test.com", 
+    "favoriteColor":"Brown", 
+    "birthday":"06/19/2000"
+}
 
-2. PRODUCTION Deploy
+### PUT contact PUT http://localhost:8080/contacts/64013448dbdd5bc0cf1d46f5
 
-###
-GET https://cse341-node-01.onrender.com/contacts
+{
+    "firstName":"Taylor", 
+    "lastName":"Eakins", 
+    "email":"test@gmail.com", 
+    "favoriteColor":"Green", 
+    "birthday":"12/12/20"
+} 
 
-###
-GET https://cse341-node-01.onrender.com/contacts/63fa5ca8ba460857117b68a9
+### DELETE contact DELETE http://localhost:8080/contacts/640200e0495c612130283b97 
 
-###
-GET https://cse341-node-01.onrender.com/contacts/63fa5d3c3f96be0d654f788a
 
-###
-GET https://cse341-node-01.onrender.com/contacts/63fa5e714175f78489626b8c
+
+// PRODUCTION Deploy 
+### Get all contacts GET https://cse341-node-03.onrender.com/contacts
+
+### Get contact by id GET https://cse341-node-03.onrender.com/contacts/6401fffd495c612130283b90
+
+### Create contact POST https://cse341-node-03.onrender.com/contacts
+
+{
+    "firstName":"Ashley", 
+    "lastName":"Weaver",
+    "email":"posttest@test.com", 
+    "favoriteColor":"Brown", 
+    "birthday":"06/19/2000"
+}
+
+### PUT contact PUT https://cse341-node-03.onrender.com/contacts/64020016495c612130283b92
+
+{
+    "firstName":"Sarah", 
+    "lastName":"Birch",
+    "email":"puttesst@gmail.com",
+    "favoriteColor":"Yellow", 
+    "birthday":"06/12/20"
+}
+
+### DELETE contact DELETE https://cse341-node-03.onrender.com/contacts/64020038495c612130283b94
